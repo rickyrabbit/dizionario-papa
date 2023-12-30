@@ -14,3 +14,9 @@ Messi allo stesso livello della cartella da cui è stato fatto il clone della re
 python -m venv .
 ```
 Il venv creato dovrebbe chiamarsi di default come la cartella in cui si era nel terminale
+
+
+### Attivazione venv
+```powershell
+Set-ExecutionPolicy Unrestricted -Scope Process;..\Scripts\Activate.ps1
+```
