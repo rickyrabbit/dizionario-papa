@@ -18,4 +18,4 @@ Set-ExecutionPolicy Unrestricted -Scope Process;..\Scripts\Activate.ps1;streamli
 ### Chiudere l'applicazione
 - **per chiudere** la applicazione correttamente:
     - chiudere la tab su google chrome
-    - **selezionando il terminale precedentemente usato schiacciare CTRL-C** 
+    - **selezionando il terminale precedentemente usato schiacciare CTRL-C** oppure **Chiudere la finestra del terminale**
