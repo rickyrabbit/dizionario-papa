@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS transcriptions (
 def init_dbconn():
     # check file exists, if not create empty one
     if not db_path.exists() or not db_path.is_file():
+        db_path.parent.mkdir(parents=True,exist_ok=True)
         db_path.touch(exist_ok=True)
     dbconn = sqlite3.connect(str(db_path), check_same_thread=False)
     try:
