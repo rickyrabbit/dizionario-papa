@@ -12,3 +12,10 @@ cd $env:USERPROFILE"\Documents\app dizionario\dizionario-papa"
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process;..\Scripts\Activate.ps1;streamlit run .\home.py
 ```
+
+- dovrebbe avviarsi la applicazione e aprire in autonomia Google Chrome
+
+### Chiudere l'applicazione
+- **per chiudere** la applicazione correttamente:
+    - chiudere la tab su google chrome
+    - **selezionando il terminale precedentemente usato schiacciare CTRL-C** 
