@@ -9,8 +9,16 @@ from st_audiorec import st_audiorec
 from model import Transcription, create_transcription, search_transcriptions, update_transcription
 
 DATA_DIR : Path = Path(Path(__file__).parent,"data")
+BACKUP_DIR : Path = Path(Path(__file__).parent,"backup")
 DATA_AUDIO_DIR : Path = Path(DATA_DIR,"audio")
 
+def check_folder_existance():
+    # Check folders exists
+    check_folders = [DATA_DIR,BACKUP_DIR,DATA_AUDIO_DIR]
+    for folder in check_folders:
+        if not folder.is_dir() or not folder.exists():
+            folder.mkdir(parents=True,exist_ok=True)
+    
 ALLOWED_AUDIO_EXT = ["wav","mp3"]
 
 def salvaFileAudio(uploaded_file):

@@ -5,13 +5,10 @@ from pathlib import Path
 
 from streamlit_searchbox import st_searchbox
 
-from utils import filtered_search_vocabolario, DATA_DIR, DATA_AUDIO_DIR
+from utils import check_folder_existance, filtered_search_vocabolario
 
 # Check folders exists
-check_folders = [DATA_DIR,DATA_AUDIO_DIR]
-for folder in check_folders:
-    if not folder.is_dir() or not folder.exists():
-        folder.mkdir(parents=True,exist_ok=True)
+check_folder_existance()
 
 st.set_page_config(
     page_title="Dizionario",
