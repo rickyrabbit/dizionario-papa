@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: Debugging in Visual Studio Code 22
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug streamlit",
+            "type": "python",
+            "request": "launch",
+            "program": "streamlit",
+            "args": [
+                "run",
+                "new_main.py"
+            ],
+            "console": "externalTerminal",
+            "justMyCode": true
+        }
+    ]
+}
