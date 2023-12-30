@@ -20,3 +20,14 @@ Il venv creato dovrebbe chiamarsi di default come la cartella in cui si era nel 
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process;..\Scripts\Activate.ps1
 ```
+
+### Installazione requisiti progetto
+```powershell
+(venv) pip install -r requirements.txt
+```
+
+### Avvia app
+```powershell
+(venv) streamlit run .\home.py
+```
+
